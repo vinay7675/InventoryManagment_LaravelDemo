@@ -9,7 +9,7 @@ use App\Http\Controllers\Auth\RegisterController;
   Route::middleware('auth')->get('/me', function (Request $request) {
     return response()->json($request->user());
    });
-Route::view('/', 'auth.login');
+Route::view('/', 'dashboard');
 Route::view('/login', 'auth.login')->name('login');
 Route::view('/register', 'auth.register');
 Route::view('/items', 'items')->middleware('auth');

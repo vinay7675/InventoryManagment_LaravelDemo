@@ -15,13 +15,13 @@ let Component = null;
 
 if (path === '/login') {
   Component = Login;
-  document.title = 'Login';
+  // document.title = 'Login';
 } else if (path === '/register') {
   Component = Register;
-  document.title = 'Register';
+  // document.title = 'Register';
 } else {
   Component = Dashboard;
-  document.title = 'Dashboard';
+  // document.title = 'Dashboard';
 }
 
 if (el && Component) {
